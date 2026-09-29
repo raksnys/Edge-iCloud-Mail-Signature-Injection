@@ -1,0 +1,14 @@
+{
+  "name": "edge-icloud-mail-signature",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Edge extension: always enable Format message in iCloud Mail and inject an HTML signature.",
+  "scripts": {
+    "test": "node --test \"tests/*.test.js\"",
+    "coverage": "node --test --experimental-test-coverage \"tests/*.test.js\"",
+    "package": "powershell -NoProfile -Command \"Compress-Archive -Force -Path manifest.json,src -DestinationPath icloud-mail-signature.zip\""
+  },
+  "devDependencies": {
+    "jsdom": "^26.1.0"
+  }
+}
